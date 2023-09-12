@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Assignment-3</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -14,14 +17,21 @@
                 colors: {
                     clifford: '#da373d',
                     'nav-primary': '#F85559',
-                    'bike-secondary': 'rgba(231, 111, 81, 0.10)',
+                    
+                    'bike-secondary': '#F85559',
                 }
             }
         }
     }
 </script>
+<style>
+  .font-lato {
+    font-family: 'Lato', sans-serif;
+
+  }
+</style>
 </head>
-<body>
+<body class="font-lato">
     <header  class="md:container md:mx-auto">
         <!-- navbar -->
         <nav class="">
@@ -31,47 +41,46 @@
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>      
-                      <li><a>Item 3</a></li>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white">
+                      <li><a>Home</a></li>      
+                      <li><a>About us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
                     </ul>
                   </div>
-                  <div class="navbar-center hidden lg:flex">
+                  <div class="navbar-center hidden lg:flex text-white">
                     <ul class="menu menu-horizontal px-1">
-                      <li><a>Item 1</a></li>
-                     <li><a>Item 3</a></li>
+                      <li><a>Home</a></li>      
+                      <li><a>About us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
                     </ul>
                   </div>        
                 </div>
                 <div >
-                    <img src="images/fruit7.png" alt="">
-                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <img class="w-[54.517px]" src="images/fruit7.png" alt="">
+                    <a class="btn btn-ghost normal-case text-2xl font-lato text-white">Fruit Burst</a>
                 </div>     
                 <div class="navbar-end">
-                    <div class="form-control ">
-                        <input class="rounded-3xl" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    <div class="form-control hidden lg:flex text-white ">
+                        <input class="rounded-2xl" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto " />
                       </div>
                 </div>
               </div>
         </nav>
         <!-- banner -->
-     <banner class="pt-6">
-        <!-- <div class="justify-center text-center py-24 ">
-            <h1>Exotic tastes at your <br> doorstep</h1>
-            <p>We supply highly quality organic product</p>
-            <button class="btn-primary">smoething</button>
-        </div> -->
+     <banner class="">
 
-        <div class="carousel w-full py-8">
+        <div class="carousel  w-full lg:h-[750px] py-8">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="/images/banner1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 
                 <a href="#slide4" class="btn btn-circle">❮</a> 
                 <div class="justify-center text-center text-white p-8 ">
-                    <h1>Exotic tastes at your <br> doorstep</h1>
-                    <p>We supply highly quality organic product</p>
-                    <button class="btn-primary">smoething</button>
+                    <h1 class="lg:text-6xl font-lato font-bold" >Exotic tastes at your <br> doorstep</h1>
+                    <p class="py-4">We supply highly quality organic product</p>
+                    <button class="btn btn-accent btn-sm ">shop</button>
                 </div>
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
@@ -81,10 +90,10 @@
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a> 
                 <div class="justify-center text-center text-white p-8 ">
-                    <h1>Exotic tastes at your <br> doorstep</h1>
-                    <p>We supply highly quality organic product</p>
-                    <button class="btn-primary">smoething</button>
-                </div>
+                  <h1 class="lg:text-6xl font-lato font-bold" >Exotic tastes at your <br> doorstep</h1>
+                  <p class="py-4">We supply highly quality organic product</p>
+                  <button class="btn btn-accent btn-sm ">shop</button>
+              </div>
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div> 
@@ -92,6 +101,11 @@
               <img src="/images/banner3.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle">❮</a> 
+                <div class="justify-center text-center text-white p-8 ">
+                  <h1 class="lg:text-6xl font-lato font-bold" >Exotic tastes at your <br> doorstep</h1>
+                  <p class="py-4">We supply highly quality organic product</p>
+                  <button class="btn btn-accent btn-sm ">shop</button>
+              </div>
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div> 
@@ -99,6 +113,11 @@
               <img src="/images/banner4.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" class="btn btn-circle">❮</a> 
+                <div class="justify-center text-center text-white p-8 ">
+                  <h1 class="lg:text-6xl font-lato font-bold" >Exotic tastes at your <br> doorstep</h1>
+                  <p class="py-4">We supply highly quality organic product</p>
+                  <button class="btn btn-accent btn-sm ">shop</button>
+              </div>
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
@@ -108,21 +127,24 @@
     </header>
     <main  class="md:container md:mx-auto">
         <section class="container">
-            <div class="flex flex-1 justify-between space-y-7   gap-x-8">
+            <div class="flex flex-col lg:flex-row flex-1 justify-between space-y-7 gap-x-8   gap-30  p-24">
                 <div>
                     <h1 class="text-3xl lg:text-6xl  font-bold">Deal of the day</h1>
                     <p class="pt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature <br> from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div class="flex flex-1 gap-x-8">
-                    <div ><h1>29</h1>
+                    <div ><h1 class="text-3xl lg:text-6xl  font-bold">29</h1>
                         <p>Days</p>
                     </div>
-                    <div><h1 >29</h1>
-                        <p>Days</p>
+                    <div><h1 class="text-3xl lg:text-6xl  font-bold" >15</h1>
+                        <p>Hours</p>
                     </div>
-                    <div><h1 >29</h1>
-                        <p>Days</p>
+                    <div><h1 class="text-3xl lg:text-6xl  font-bold">25</h1>
+                        <p>Month</p>
                     </div>
+                    <div><h1 class="text-3xl lg:text-6xl  font-bold">08</h1>
+                      <p>second</p>
+                  </div>
                     
                 </div>
             </div>
@@ -131,79 +153,90 @@
         <!-- card -->
         <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-20  py-8">
             <div class="card  bg-base-100 shadow-xl border border-gray-400">
-                <figure><img class="w-36" src="images/fruit1.png" alt="Shoes" /></figure>
+                <figure><img class="w-36" src="images/fruit6.png " alt="Shoes" /></figure>
                 <div class="card-body">
                     <p class="text-center border-b-4">12.90$ - 18.85$</p>
-                        <div class="rating justify-center">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          </div>
+                    <div class="rating rating-md justify-center">
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" checked />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                    </div>
                           <div class=" text-center  ">
-                            <h4 class="  text-info">Regina Miles</h4>
+                            <h4 class="  text-info">Apple</h4>
                             <p class="  ">Banker</p>    
                             
                         </div>
                 </div>
             </div>
             <div class="card  bg-base-100 shadow-xl border border-gray-400">
-                <figure><img class="w-36" src="images/fruit1.png" alt="Shoes" /></figure>
+                <figure><img class="w-36" src="images/fruit7.png" alt="Shoes" /></figure>
                 <div class="card-body">
                     <p class="text-center border-b-4">12.90$ - 18.85$</p>
-                        <div class="rating justify-center">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          </div>
+                    <div class="rating rating-md justify-center">
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" checked />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                    </div>
                           <div class=" text-center  ">
-                            <h4 class="  text-info">Regina Miles</h4>
+                            <h4 class="  text-info">Oranges</h4>
                             <p class="  ">Banker</p>    
                             
                         </div>
                 </div>
             </div>
             <div class="card  bg-base-100 shadow-xl border border-gray-400">
-                <figure><img class="w-36" src="images/fruit1.png" alt="Shoes" /></figure>
+                <figure><img class="w-36" src="images/fruit8.png" alt="Shoes" /></figure>
                 <div class="card-body">
                     <p class="text-center border-b-4">12.90$ - 18.85$</p>
-                        <div class="rating justify-center">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          </div>
+                    <div class="rating rating-md justify-center">
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" checked />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                    </div>
                           <div class=" text-center  ">
-                            <h4 class="  text-info">Regina Miles</h4>
+                            <h4 class="  text-info">Red Dragon</h4>
                             <p class="  ">Banker</p>    
                             
                         </div>
                 </div>
             </div>
             <div class="card  bg-base-100 shadow-xl border border-gray-400">
-                <figure><img class="w-36" src="images/fruit1.png" alt="Shoes" /></figure>
+                <figure><img class="w-36" src="images/fruit9.png" alt="Shoes" /></figure>
                 <div class="card-body">
                     <p class="text-center border-b-4">12.90$ - 18.85$</p>
-                        <div class="rating justify-center">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          </div>
+                    <div class="rating rating-md justify-center">
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" checked />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-red-700" />
+                    </div>
                           <div class=" text-center  ">
-                            <h4 class="  text-info">Regina Miles</h4>
+                            <h4 class="  text-info">Banana</h4>
                             <p class="  ">Banker</p>    
                             
                         </div>
                 </div>
             </div>
         </div>
-        <button class="primary justify-center text-center ">shop</button>
+        <div class="justify-center text-center text-white p-8 ">
+          <button class="btn btn-accent btn-sm ">shop</button>
+
+        </div>
+        <!-- deals the end -->
+         <!-- meet the team section strart -->
+         
+
+        <section>
+
+        </section>
+      
     </main>
     <footer></footer>
     
